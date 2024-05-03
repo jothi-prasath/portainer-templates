@@ -1,5 +1,5 @@
 # Portainer Templates
-
+This repository has a Portainer application template JSON file for homelab enthusiasts to quickly deploy services commonly used in homelab environments.
 
 ## Usage
 1. Log into your Portainer web UI
