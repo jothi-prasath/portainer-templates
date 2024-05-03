@@ -1,0 +1,454 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "categories": [],
+      "description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "100",
+          "label": "PGID",
+          "name": "PGID"
+        },
+        {
+          "default": "Asia/Kolkata",
+          "label": "TZ",
+          "name": "TZ"
+        }
+      ],
+      "image": "jellyfin/jellyfin",
+      "logo": "https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/android/release/app_icon.svg",
+      "name": "jellyfin",
+      "platform": "linux",
+      "network": "host",
+      "ports": [
+        "8096:8096/tcp",
+        "8920:8920/tcp"
+      ],
+      "restart_policy": "unless-stopped",
+      "title": "Jellyfin",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/mnt/HDD1/portainer/jellyfin",
+          "container": "/config"
+        },
+        {
+          "bind": "/mnt/HDD1/portainer/jellyfin/cache",
+          "container": "/cache"
+        },
+        {
+          "bind": "/etc/hostname",
+          "container": "/etc/hostname"
+        },
+        {
+          "bind": "/mnt/HDD1/Movies",
+          "container": "/mnt/HDD1/Movies"
+        },
+        {
+          "bind": "/mnt/HDD1/Series",
+          "container": "/mnt/HDD1/Series"
+        },
+        {
+          "bind": "/mnt/HDD1/Books",
+          "container": "/mnt/HDD1/Books"
+        },
+        {
+          "bind": "/mnt/HDD1/Music",
+          "container": "/mnt/HDD1/Music"
+        },
+        {
+          "bind": "/mnt/HDD1/DVR",
+          "container": "/mnt/HDD1/DVR"
+        }
+      ]
+    },
+    {
+      "categories": [],
+      "description": "A modern, fully static, fast, secure fully proxied, highly customizable application dashboard with integrations for over 100 services and translations into multiple languages.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "100",
+          "label": "PGID",
+          "name": "PGID"
+        },
+        {
+          "default": "Asia/Kolkata",
+          "label": "TZ",
+          "name": "TZ"
+        }
+      ],
+      "image": "ghcr.io/gethomepage/homepage",
+      "logo": "https://raw.githubusercontent.com/gethomepage/homepage/main/public/android-chrome-512x512.png",
+      "name": "homepage",
+      "platform": "linux",
+      "network": "host",
+      "ports": [
+        "3000:3000/tcp"
+      ],
+      "restart_policy": "unless-stopped",
+      "title": "Homepage",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/mnt/HDD1/portainer/homepage",
+          "container": "/app/config"
+        },
+        {
+          "bind": "/var/run/docker.sock",
+          "container": "/var/run/docker.sock"
+        },
+        {
+          "bind": "/mnt/HDD1/",
+          "container": "/mnt/HDD1/"
+        }
+      ]
+    },
+    {
+      "categories": [],
+      "description": "Jio iptv.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "100",
+          "label": "PGID",
+          "name": "PGID"
+        },
+        {
+          "default": "Asia/Kolkata",
+          "label": "TZ",
+          "name": "TZ"
+        }
+      ],
+      "image": "ghcr.io/rabilrbl/jiotv_go",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6f/IPTV.png",
+      "name": "jiotv_go",
+      "platform": "linux",
+      "network": "host",
+      "ports": [
+        "5001:5001/tcp"
+      ],
+      "restart_policy": "unless-stopped",
+      "title": "Jio IP tv",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/mnt/HDD1/portainer/jiotv_go",
+          "container": "/app/.jiotv_go"
+        }
+      ],
+      "command": "serve --config /app/.jiotv_go/jiotv_go.yaml"
+    },
+    {
+      "categories": [],
+      "description": "qbittorrent web torrent.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "100",
+          "label": "PGID",
+          "name": "PGID"
+        },
+        {
+          "default": "Asia/Kolkata",
+          "label": "TZ",
+          "name": "TZ"
+        }
+      ],
+      "image": "lscr.io/linuxserver/qbittorrent:latest",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/New_qBittorrent_Logo.svg",
+      "name": "qbittorrent",
+      "platform": "linux",
+      "network": "host",
+      "ports": [
+        "8080:8080/tcp",
+        "6881:6881/tcp",
+        "6881:6881/udp"
+      ],
+      "restart_policy": "unless-stopped",
+      "title": "Qbittorrent",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/mnt/HDD1/portainer/qbittorrent",
+          "container": "/config"
+        },
+        {
+          "bind": "/mnt/HDD1",
+          "container": "/mnt/HDD1"
+        }
+      ]
+    },
+    {
+      "categories": [],
+      "description": "Cloudflared tunnel.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "100",
+          "label": "PGID",
+          "name": "PGID"
+        },
+        {
+          "label": "TUNNEL_TOKEN",
+          "name": "TUNNEL_TOKEN"
+        }
+      ],
+      "image": "cloudflare/cloudflared",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/9/94/Cloudflare_Logo.png",
+      "name": "cloudflare-tunnel",
+      "platform": "linux",
+      "network": "host",
+      "ports": [],
+      "restart_policy": "always",
+      "title": "Cloudflared Tunnel",
+      "type": 1,
+      "volumes": [],
+      "command": "tunnel --no-autoupdate run"
+    },
+    {
+      "categories": [],
+      "description": "A container-based solution for automating Docker container base image updates.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "100",
+          "label": "PGID",
+          "name": "PGID"
+        },
+        {
+          "default": "Asia/Kolkata",
+          "label": "TZ",
+          "name": "TZ"
+        }
+      ],
+      "image": "containrrr/watchtower",
+      "logo": "https://raw.githubusercontent.com/containrrr/watchtower/main/logo.png",
+      "name": "watchtower",
+      "platform": "linux",
+      "network": "host",
+      "ports": [],
+      "restart_policy": "unless-stopped",
+      "title": "Watchtower",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/var/run/docker.sock",
+          "container": "/var/run/docker.sock"
+        }
+      ],
+      "command": "--schedule '* */5 * * *' --cleanup"
+    },
+    {
+      "categories": [],
+      "description": "Reiverr is a clean combined interface for Jellyfin, TMDB, Radarr and Sonarr, as well as a replacement to Overseerr.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "100",
+          "label": "PGID",
+          "name": "PGID"
+        },
+        {
+          "default": "Asia/Kolkata",
+          "label": "TZ",
+          "name": "TZ"
+        }
+      ],
+      "image": "ghcr.io/aleksilassila/reiverr",
+      "logo": "https://raw.githubusercontent.com/aleksilassila/reiverr/master/static/favicon.png",
+      "name": "reiverr",
+      "platform": "linux",
+      "network": "host",
+      "ports": [
+        "9494:9494"
+      ],
+      "restart_policy": "unless-stopped",
+      "title": "Reiverr",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/mnt/HDD1/portainer/reiverr",
+          "container": "/config"
+        }
+      ]
+    },
+    {
+      "categories": [],
+      "description": "Movie organizer/manager for usenet and torrent users.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "100",
+          "label": "PGID",
+          "name": "PGID"
+        },
+        {
+          "default": "Asia/Kolkata",
+          "label": "TZ",
+          "name": "TZ"
+        }
+      ],
+      "image": "ghcr.io/hotio/radarr:latest",
+      "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/radarr.png",
+      "name": "radarr",
+      "platform": "linux",
+      "network": "host",
+      "ports": [
+        "7878:7878"
+      ],
+      "restart_policy": "unless-stopped",
+      "title": "Radarr",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/mnt/HDD1/radarr/config",
+          "container": "/config"
+        },
+        {
+          "bind": "/mnt/HDD1/radarr/data",
+          "container": "/data"
+        },
+        {
+          "bind": "/mnt/HDD1",
+          "container": "/mnt/HDD1"
+        }
+      ]
+    },
+    {
+      "categories": [],
+      "description": "Smart PVR for newsgroup and bittorrent users.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "100",
+          "label": "PGID",
+          "name": "PGID"
+        },
+        {
+          "default": "Asia/Kolkata",
+          "label": "TZ",
+          "name": "TZ"
+        }
+      ],
+      "image": "ghcr.io/hotio/sonarr:latest",
+      "logo": "https://raw.githubusercontent.com/Sonarr/Sonarr/develop/Logo/128.png",
+      "name": "sonarr",
+      "platform": "linux",
+      "network": "host",
+      "ports": [
+        "8989:8989"
+      ],
+      "restart_policy": "unless-stopped",
+      "title": "Sonarr",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/mnt/HDD1/sonarr/config",
+          "container": "/config"
+        },
+        {
+          "bind": "/mnt/HDD1/sonarr/data",
+          "container": "/data"
+        },
+        {
+          "bind": "/mnt/HDD1",
+          "container": "/mnt/HDD1"
+        }
+      ]
+    },
+    {
+      "categories": [],
+      "description": "API Support for your favorite torrent trackers.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "100",
+          "label": "PGID",
+          "name": "PGID"
+        },
+        {
+          "default": "Asia/Kolkata",
+          "label": "TZ",
+          "name": "TZ"
+        }
+      ],
+      "image": "lscr.io/linuxserver/jackett:latest",
+      "logo": "https://avatars.githubusercontent.com/u/15383019",
+      "name": "jackett",
+      "platform": "linux",
+      "network": "host",
+      "ports": [
+        "9117:9117"
+      ],
+      "restart_policy": "unless-stopped",
+      "title": "Jackett",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/mnt/HDD1/jackett/config",
+          "container": "/config"
+        },
+        {
+          "bind": "/mnt/HDD1/jackett/downloads",
+          "container": "/downloads"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "Jellystat",
+      "name": "jellystat",
+      "description": "Jellystat is a free and open source Statistics App for Jellyfin!",
+      "categories": [],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/CyferShepard/Jellystat/main/public/favicon.ico",
+      "repository": {
+        "url": "https://github.com/jothi-prasath/portainer-templates",
+        "stackfile": "stacks/jellystat/docker-compose.yml"
+      }
+    }    
+  ]
+}

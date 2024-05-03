@@ -1,0 +1,34 @@
+version: '3'
+services:
+  jellystat-db:
+    image: postgres:15.2
+    environment:
+      PUID: 1000
+      PGID: 100
+      TZ: Asia/Kolkata
+      POSTGRES_DB: 'jfstat'
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mypassword
+    volumes:
+    - /postgres-data:/mnt/HDD1/jellystat/postgresql/data
+  jellystat:
+    image: cyfershepard/jellystat:latest
+    environment:
+      PUID: 1000
+      PGID: 100
+      TZ: Asia/Kolkata
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_IP: jellystat-db
+      POSTGRES_PORT: 5432
+      JWT_SECRET: 'my-secret-jwt-key'
+    ports:
+      - "3000:3000" #Server Port
+    volumes:
+      - /backup-data:/mnt/HDD1/jellystat/backup-data/
+
+    depends_on:
+      - jellystat-db
+    restart: unless-stopped
+networks:
+  default:
