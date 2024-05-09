@@ -199,6 +199,50 @@
     },
     {
       "categories": [],
+      "description": "qbittorrent-enhanced-edition web torrent.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "100",
+          "label": "PGID",
+          "name": "PGID"
+        },
+        {
+          "default": "Asia/Kolkata",
+          "label": "TZ",
+          "name": "TZ"
+        }
+      ],
+      "image": "jothiprasath2/qbittorrent-enhanced-edition:latest",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/New_qBittorrent_Logo.svg",
+      "name": "qbittorrent-enhanced-edition",
+      "platform": "linux",
+      "network": "host",
+      "ports": [
+        "8080:8080/tcp",
+        "6881:6881/tcp",
+        "6881:6881/udp"
+      ],
+      "restart_policy": "unless-stopped",
+      "title": "Qbittorrent Enhanced Edition",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/mnt/HDD1/portainer/qbittorrent-enhanced-edition",
+          "container": "/config"
+        },
+        {
+          "bind": "/mnt/HDD1",
+          "container": "/mnt/HDD1"
+        }
+      ]
+    },
+    {
+      "categories": [],
       "description": "Cloudflared tunnel.",
       "env": [
         {

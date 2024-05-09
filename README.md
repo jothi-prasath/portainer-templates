@@ -15,6 +15,7 @@ https://raw.githubusercontent.com/jothi-prasath/portainer-templates/master/templ
 - [Homepage](https://gethomepage.dev/)
 - [Watchtower](https://containrrr.dev/watchtower/)
 - [qBittorrent](https://github.com/qbittorrent/qBittorrent)
+- [qBittorrent Enhanced Edition](https://github.com/c0re100/qBittorrent-Enhanced-Edition)
 - [Jellyfin](https://jellyfin.org/)
 - [Jellystat](https://github.com/CyferShepard/Jellystat)
 - [Jiotv go](https://github.com/rabilrbl/jiotv_go)
