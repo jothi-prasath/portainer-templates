@@ -199,7 +199,7 @@
     },
     {
       "categories": [],
-      "description": "qbittorrent-enhanced-edition web torrent.",
+      "description": "qbittorrent enhanced edition web torrent.",
       "env": [
         {
           "default": "1000",
