@@ -14,7 +14,7 @@ https://raw.githubusercontent.com/jothi-prasath/portainer-templates/master/templ
 - [Cloudflared tunnel](https://github.com/cloudflare/cloudflared)
 - [Homepage](https://gethomepage.dev/)
 - [Watchtower](https://containrrr.dev/watchtower/)
-- [Qbittorrent](https://github.com/qbittorrent/qBittorrent)
+- [qBittorrent](https://github.com/qbittorrent/qBittorrent)
 - [Jellyfin](https://jellyfin.org/)
 - [Jellystat](https://github.com/CyferShepard/Jellystat)
 - [Jiotv go](https://github.com/rabilrbl/jiotv_go)
