@@ -381,11 +381,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD/radarr/config",
+          "bind": "/mnt/HDD/portainer/radarr/config",
           "container": "/config"
         },
         {
-          "bind": "/mnt/HDD/radarr/data",
+          "bind": "/mnt/HDD/portainer/radarr/data",
           "container": "/data"
         },
         {
@@ -427,11 +427,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD/sonarr/config",
+          "bind": "/mnt/HDD/portainer/sonarr/config",
           "container": "/config"
         },
         {
-          "bind": "/mnt/HDD/sonarr/data",
+          "bind": "/mnt/HDD/portainer/sonarr/data",
           "container": "/data"
         },
         {
@@ -473,11 +473,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD/jackett/config",
+          "bind": "/mnt/HDD/portainer/jackett/config",
           "container": "/config"
         },
         {
-          "bind": "/mnt/HDD/jackett/downloads",
+          "bind": "/mnt/HDD/portainer/jackett/downloads",
           "container": "/downloads"
         }
       ]
@@ -518,7 +518,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD/uptime-kuma/",
+          "bind": "/mnt/HDD/portainer/uptime-kuma/",
           "container": "/app/data"
         },
         {
