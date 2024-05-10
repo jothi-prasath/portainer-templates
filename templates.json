@@ -529,6 +529,10 @@
         {
           "bind": "/mnt/HDD/uptime-kuma/",
           "container": "/app/data"
+        },
+        {
+        "bind": "/var/run/docker.sock",
+        "container": "/var/run/docker.sock"
         }
       ]
     } 
