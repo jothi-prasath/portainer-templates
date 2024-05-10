@@ -493,6 +493,44 @@
         "url": "https://github.com/jothi-prasath/portainer-templates",
         "stackfile": "stacks/jellystat/docker-compose.yml"
       }
-    }    
+    },
+    {
+      "categories": [],
+      "description": "A fancy self-hosted monitoring tool.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "100",
+          "label": "PGID",
+          "name": "PGID"
+        },
+        {
+          "default": "Asia/Kolkata",
+          "label": "TZ",
+          "name": "TZ"
+        }
+      ],
+      "image": "louislam/uptime-kuma:latest",
+      "logo": "https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/icon.svg",
+      "name": "uptime-kuma",
+      "platform": "linux",
+      "network": "host",
+      "ports": [
+        "3001:3001"
+      ],
+      "restart_policy": "unless-stopped",
+      "title": "Uptime Kuma",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/mnt/HDD/uptime-kuma/",
+          "container": "/app/data"
+        }
+      ]
+    } 
   ]
 }

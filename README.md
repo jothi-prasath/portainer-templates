@@ -23,3 +23,4 @@ https://raw.githubusercontent.com/jothi-prasath/portainer-templates/master/templ
 - [Radarr](https://radarr.video/)
 - [Sonarr](https://sonarr.tv/)
 - [Jackett](https://github.com/Jackett/Jackett)
+- [Uptime Kuma](https://github.com/louislam/uptime-kuma)
