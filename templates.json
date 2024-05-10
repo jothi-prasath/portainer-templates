@@ -106,7 +106,8 @@
         },
         {
           "bind": "/var/run/docker.sock",
-          "container": "/var/run/docker.sock"
+          "container": "/var/run/docker.sock",
+          "readonly": true
         },
         {
           "bind": "/mnt/HDD/",
@@ -522,7 +523,8 @@
         },
         {
         "bind": "/var/run/docker.sock",
-        "container": "/var/run/docker.sock"
+        "container": "/var/run/docker.sock",
+        "readonly": true
         }
       ]
     } 
