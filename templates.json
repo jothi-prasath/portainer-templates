@@ -499,16 +499,6 @@
       "description": "A fancy self-hosted monitoring tool.",
       "env": [
         {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        },
-        {
           "default": "Asia/Kolkata",
           "label": "TZ",
           "name": "TZ"
