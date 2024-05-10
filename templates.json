@@ -35,11 +35,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD1/portainer/jellyfin",
+          "bind": "/mnt/HDD/portainer/jellyfin",
           "container": "/config"
         },
         {
-          "bind": "/mnt/HDD1/portainer/jellyfin/cache",
+          "bind": "/mnt/HDD/portainer/jellyfin/cache",
           "container": "/cache"
         },
         {
@@ -47,24 +47,24 @@
           "container": "/etc/hostname"
         },
         {
-          "bind": "/mnt/HDD1/Movies",
-          "container": "/mnt/HDD1/Movies"
+          "bind": "/mnt/HDD/Movies",
+          "container": "/mnt/HDD/Movies"
         },
         {
-          "bind": "/mnt/HDD1/Series",
-          "container": "/mnt/HDD1/Series"
+          "bind": "/mnt/HDD/Series",
+          "container": "/mnt/HDD/Series"
         },
         {
-          "bind": "/mnt/HDD1/Books",
-          "container": "/mnt/HDD1/Books"
+          "bind": "/mnt/HDD/Books",
+          "container": "/mnt/HDD/Books"
         },
         {
-          "bind": "/mnt/HDD1/Music",
-          "container": "/mnt/HDD1/Music"
+          "bind": "/mnt/HDD/Music",
+          "container": "/mnt/HDD/Music"
         },
         {
-          "bind": "/mnt/HDD1/DVR",
-          "container": "/mnt/HDD1/DVR"
+          "bind": "/mnt/HDD/DVR",
+          "container": "/mnt/HDD/DVR"
         }
       ]
     },
@@ -101,7 +101,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD1/portainer/homepage",
+          "bind": "/mnt/HDD/portainer/homepage",
           "container": "/app/config"
         },
         {
@@ -109,8 +109,8 @@
           "container": "/var/run/docker.sock"
         },
         {
-          "bind": "/mnt/HDD1/",
-          "container": "/mnt/HDD1/"
+          "bind": "/mnt/HDD/",
+          "container": "/mnt/HDD/"
         }
       ]
     },
@@ -147,7 +147,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD1/portainer/jiotv_go",
+          "bind": "/mnt/HDD/portainer/jiotv_go",
           "container": "/app/.jiotv_go"
         }
       ],
@@ -188,12 +188,12 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD1/portainer/qbittorrent",
+          "bind": "/mnt/HDD/portainer/qbittorrent",
           "container": "/config"
         },
         {
-          "bind": "/mnt/HDD1",
-          "container": "/mnt/HDD1"
+          "bind": "/mnt/HDD",
+          "container": "/mnt/HDD"
         }
       ]
     },
@@ -232,12 +232,12 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD1/portainer/qbittorrent-enhanced-edition",
+          "bind": "/mnt/HDD/portainer/qbittorrent-enhanced-edition",
           "container": "/config"
         },
         {
-          "bind": "/mnt/HDD1",
-          "container": "/mnt/HDD1"
+          "bind": "/mnt/HDD",
+          "container": "/mnt/HDD"
         }
       ]
     },
@@ -342,7 +342,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD1/portainer/reiverr",
+          "bind": "/mnt/HDD/portainer/reiverr",
           "container": "/config"
         }
       ]
@@ -380,16 +380,16 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD1/radarr/config",
+          "bind": "/mnt/HDD/radarr/config",
           "container": "/config"
         },
         {
-          "bind": "/mnt/HDD1/radarr/data",
+          "bind": "/mnt/HDD/radarr/data",
           "container": "/data"
         },
         {
-          "bind": "/mnt/HDD1",
-          "container": "/mnt/HDD1"
+          "bind": "/mnt/HDD",
+          "container": "/mnt/HDD"
         }
       ]
     },
@@ -426,16 +426,16 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD1/sonarr/config",
+          "bind": "/mnt/HDD/sonarr/config",
           "container": "/config"
         },
         {
-          "bind": "/mnt/HDD1/sonarr/data",
+          "bind": "/mnt/HDD/sonarr/data",
           "container": "/data"
         },
         {
-          "bind": "/mnt/HDD1",
-          "container": "/mnt/HDD1"
+          "bind": "/mnt/HDD",
+          "container": "/mnt/HDD"
         }
       ]
     },
@@ -472,11 +472,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD1/jackett/config",
+          "bind": "/mnt/HDD/jackett/config",
           "container": "/config"
         },
         {
-          "bind": "/mnt/HDD1/jackett/downloads",
+          "bind": "/mnt/HDD/jackett/downloads",
           "container": "/downloads"
         }
       ]
