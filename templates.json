@@ -152,7 +152,7 @@
           "container": "/app/.jiotv_go"
         }
       ],
-      "command": "serve --config /app/.jiotv_go/jiotv_go.yaml"
+      "command": "serve --public --config /app/.jiotv_go/jiotv_go.yaml"
     },
     {
       "categories": [],
