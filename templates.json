@@ -139,7 +139,7 @@
       "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6f/IPTV.png",
       "name": "jiotv_go",
       "platform": "linux",
-      "network": "host",
+      "network": "bridge",
       "ports": [
         "5001:5001/tcp"
       ],
@@ -178,7 +178,7 @@
       "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/New_qBittorrent_Logo.svg",
       "name": "qbittorrent",
       "platform": "linux",
-      "network": "host",
+      "network": "bridge",
       "ports": [
         "8080:8080/tcp",
         "6881:6881/tcp",
@@ -222,7 +222,7 @@
       "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/New_qBittorrent_Logo.svg",
       "name": "qbittorrent-enhanced-edition",
       "platform": "linux",
-      "network": "host",
+      "network": "bridge",
       "ports": [
         "8080:8080/tcp",
         "6881:6881/tcp",
@@ -297,7 +297,7 @@
       "logo": "https://raw.githubusercontent.com/containrrr/watchtower/main/logo.png",
       "name": "watchtower",
       "platform": "linux",
-      "network": "host",
+      "network": "bridge",
       "ports": [],
       "restart_policy": "unless-stopped",
       "title": "Watchtower",
@@ -464,7 +464,7 @@
       "logo": "https://avatars.githubusercontent.com/u/15383019",
       "name": "jackett",
       "platform": "linux",
-      "network": "host",
+      "network": "bridge",
       "ports": [
         "9117:9117"
       ],
@@ -509,7 +509,7 @@
       "logo": "https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/icon.svg",
       "name": "uptime-kuma",
       "platform": "linux",
-      "network": "host",
+      "network": "bridge",
       "ports": [
         "3001:3001"
       ],
