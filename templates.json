@@ -496,6 +496,19 @@
       }
     },
     {
+      "type": 3,
+      "title": "Telegram Drive",
+      "name": "teldrive",
+      "description": "Telegram Drive is a powerful utility that enables you to organise your telegram files and much more.",
+      "categories": [],
+      "platform": "linux",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/240px-Telegram_logo.svg.png",
+      "repository": {
+        "url": "https://github.com/jothi-prasath/portainer-templates",
+        "stackfile": "stacks/teldrive/docker-compose.yml"
+      }
+    },
+    {
       "categories": [],
       "description": "A fancy self-hosted monitoring tool.",
       "env": [
