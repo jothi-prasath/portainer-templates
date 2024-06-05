@@ -23,7 +23,7 @@ services:
       POSTGRES_PORT: 5432
       JWT_SECRET: 'my-secret-jwt-key'
     ports:
-      - "3000:3000" #Server Port
+      - "3020:3000" #Server Port
     volumes:
       - /mnt/HDD/portainer/jellystat/backup-data/:/backup-data
 
