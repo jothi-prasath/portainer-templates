@@ -10,7 +10,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: mypassword
     volumes:
-    - /postgres-data:/mnt/HDD/portainer/jellystat/postgresql/data
+    - /mnt/HDD/portainer/jellystat/postgresql/data:/postgres-data
   jellystat:
     image: cyfershepard/jellystat:latest
     environment:
@@ -25,7 +25,7 @@ services:
     ports:
       - "3000:3000" #Server Port
     volumes:
-      - /backup-data:/mnt/HDD/portainer/jellystat/backup-data/
+      - /mnt/HDD/portainer/jellystat/backup-data/:/backup-data
 
     depends_on:
       - jellystat-db
