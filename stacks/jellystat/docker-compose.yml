@@ -10,7 +10,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: mypassword
     volumes:
-    - /mnt/HDD/portainer/jellystat/postgresql/data:/postgres-data
+    - /mnt/HDD/portainer/jellystat/postgresql/data:/var/lib/postgresql/data
   jellystat:
     image: cyfershepard/jellystat:latest
     environment:
