@@ -3,19 +3,15 @@ services:
   jellystat-db:
     image: postgres:15.2
     environment:
-      PUID: 1000
-      PGID: 100
-      TZ: Asia/Kolkata
       POSTGRES_DB: 'jfstat'
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: mypassword
+      PGDATA: /var/lib/pg_data
     volumes:
-    - /mnt/HDD/portainer/jellystat/postgresql/data:/var/lib/postgresql/data
+      - /mnt/HDD/portainer/jellystat/postgresql/data:/var/lib/postgresql
   jellystat:
     image: cyfershepard/jellystat:latest
     environment:
-      PUID: 1000
-      PGID: 100
       TZ: Asia/Kolkata
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: mypassword
