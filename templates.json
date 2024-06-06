@@ -110,8 +110,8 @@
           "readonly": true
         },
         {
-          "bind": "/mnt/HDD/",
-          "container": "/mnt/HDD/"
+          "bind": "/mnt/HDD",
+          "container": "/HDD1"
         }
       ]
     },
