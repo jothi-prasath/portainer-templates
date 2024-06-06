@@ -6,9 +6,8 @@ services:
       POSTGRES_DB: 'jfstat'
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: mypassword
-      PGDATA: /var/lib/pg_data
     volumes:
-      - /mnt/HDD/portainer/jellystat/postgresql/data:/var/lib/postgresql
+      - jellystat-postgres-data:/var/lib/postgresql/data
   jellystat:
     image: cyfershepard/jellystat:latest
     environment:
