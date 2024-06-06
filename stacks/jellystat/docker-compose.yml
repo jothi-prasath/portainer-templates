@@ -7,7 +7,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: mypassword
     volumes:
-      - jellystat-postgres-data:/var/lib/postgresql/data
+      - jellystat-postgresql-data:/var/lib/postgresql/data
   jellystat:
     image: cyfershepard/jellystat:latest
     environment:
@@ -25,5 +25,5 @@ services:
     depends_on:
       - jellystat-db
     restart: unless-stopped
-networks:
-  default:
+volumes:
+  jellystat-postgresql-data:
