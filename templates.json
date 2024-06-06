@@ -70,6 +70,39 @@
     },
     {
       "categories": [],
+      "description": "A modern web client for Jellyfin based on Vue.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "100",
+          "label": "PGID",
+          "name": "PGID"
+        },
+        {
+          "default": "Asia/Kolkata",
+          "label": "TZ",
+          "name": "TZ"
+        }
+      ],
+      "image": "jellyfin/jellyfin-vue:unstable",
+      "logo": "https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/android/release/app_icon.svg",
+      "name": "jellyfin-vue",
+      "platform": "linux",
+      "network": "host",
+      "ports": [
+        "8097:80"
+      ],
+      "restart_policy": "unless-stopped",
+      "title": "Jellyfin Vue",
+      "type": 1,
+      "volumes": []
+    },
+    {
+      "categories": [],
       "description": "A modern, fully static, fast, secure fully proxied, highly customizable application dashboard with integrations for over 100 services and translations into multiple languages.",
       "env": [
         {
