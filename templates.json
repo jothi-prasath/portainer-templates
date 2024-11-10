@@ -35,36 +35,16 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD/portainer/jellyfin",
+          "bind": "/opt/docker/jellyfin",
           "container": "/config"
         },
         {
-          "bind": "/mnt/HDD/portainer/jellyfin/cache",
+          "bind": "/opt/docker/jellyfin/cache",
           "container": "/cache"
         },
         {
           "bind": "/etc/hostname",
           "container": "/etc/hostname"
-        },
-        {
-          "bind": "/mnt/HDD/Movies",
-          "container": "/mnt/HDD/Movies"
-        },
-        {
-          "bind": "/mnt/HDD/Series",
-          "container": "/mnt/HDD/Series"
-        },
-        {
-          "bind": "/mnt/HDD/Books",
-          "container": "/mnt/HDD/Books"
-        },
-        {
-          "bind": "/mnt/HDD/Music",
-          "container": "/mnt/HDD/Music"
-        },
-        {
-          "bind": "/mnt/HDD/DVR",
-          "container": "/mnt/HDD/DVR"
         }
       ]
     },
@@ -134,17 +114,13 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD/portainer/homepage",
+          "bind": "/opt/docker/homepage",
           "container": "/app/config"
         },
         {
           "bind": "/var/run/docker.sock",
           "container": "/var/run/docker.sock",
           "readonly": true
-        },
-        {
-          "bind": "/mnt/HDD",
-          "container": "/HDD1"
         }
       ]
     },
@@ -181,7 +157,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD/portainer/jiotv_go",
+          "bind": "/opt/docker/jiotv_go",
           "container": "/app/.jiotv_go"
         }
       ],
@@ -222,12 +198,8 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD/portainer/qbittorrent",
+          "bind": "/opt/docker/qbittorrent",
           "container": "/config"
-        },
-        {
-          "bind": "/mnt/HDD",
-          "container": "/mnt/HDD"
         }
       ]
     },
@@ -266,12 +238,8 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD/portainer/qbittorrent-enhanced-edition",
+          "bind": "/opt/docker/qbittorrent-enhanced-edition",
           "container": "/config"
-        },
-        {
-          "bind": "/mnt/HDD",
-          "container": "/mnt/HDD"
         }
       ]
     },
@@ -376,7 +344,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD/portainer/reiverr",
+          "bind": "/opt/docker/reiverr",
           "container": "/config"
         }
       ]
@@ -414,16 +382,12 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD/portainer/radarr/config",
+          "bind": "/opt/docker/radarr/config",
           "container": "/config"
         },
         {
-          "bind": "/mnt/HDD/portainer/radarr/data",
+          "bind": "/opt/docker/radarr/data",
           "container": "/data"
-        },
-        {
-          "bind": "/mnt/HDD",
-          "container": "/mnt/HDD"
         }
       ]
     },
@@ -460,16 +424,12 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD/portainer/sonarr/config",
+          "bind": "/opt/docker/sonarr/config",
           "container": "/config"
         },
         {
-          "bind": "/mnt/HDD/portainer/sonarr/data",
+          "bind": "/opt/docker/sonarr/data",
           "container": "/data"
-        },
-        {
-          "bind": "/mnt/HDD",
-          "container": "/mnt/HDD"
         }
       ]
     },
@@ -506,11 +466,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD/portainer/jackett/config",
+          "bind": "/opt/docker/jackett/config",
           "container": "/config"
         },
         {
-          "bind": "/mnt/HDD/portainer/jackett/downloads",
+          "bind": "/opt/docker/jackett/downloads",
           "container": "/downloads"
         }
       ]
@@ -564,7 +524,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/mnt/HDD/portainer/uptime-kuma/",
+          "bind": "/opt/docker/uptime-kuma/",
           "container": "/app/data"
         },
         {
